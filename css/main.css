@@ -277,6 +277,12 @@ table {
 .icon-twitter:before {
   content: "\e607";
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "adelle", serif;
+}
 h1 {
   margin: 0px;
   font-size: 50px;
