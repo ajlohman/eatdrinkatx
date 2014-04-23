@@ -407,6 +407,10 @@ footer {
   transition: none;
   margin: 0px;
 }
+.title-cat {
+  font-size: 28px;
+  font-family: "adelle", serif;
+}
 .nav li a {
   font-size: 48px;
   color: #ffffff;
