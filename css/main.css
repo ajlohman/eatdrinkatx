@@ -397,6 +397,8 @@ footer {
 .branding {
   margin-bottom: 20px;
   color: #333333;
+}
+.branding p {
   font-size: 28px;
   font-family: "adelle", serif;
 }
