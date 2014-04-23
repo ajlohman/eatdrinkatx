@@ -397,7 +397,8 @@ footer {
 .branding {
   margin-bottom: 20px;
   color: #333333;
-  font-size: 50px;
+  font-size: 28px;
+  font-family: "adelle", serif;
 }
 .branding > a {
   max-width: 75%;
