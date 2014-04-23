@@ -8,7 +8,7 @@ header {
   width:100%;
   margin:0px;
   display: block;
-  padding: 30px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 
@@ -38,8 +38,12 @@ footer {
 	color: @gray-dark;
 }
 
-.branding img {
+.branding > a {
 	max-width: 75%;
+	font-size: 176px;
+	color: @white;
+	transition: none;
+	margin:0px;
 	// @media (min-width: @screen-tablet) {
 	// 	max-width: 30%;
 	// }
@@ -47,6 +51,26 @@ footer {
 	// 	max-width: 20%;
 	// }
 }
+
+
+.nav li a {
+	font-size: 48px;
+	color: @white;
+	margin:0px;
+	&:hover {
+	color: @red;	
+	}
+}
+
+.nav li.active a {
+	color: @red;
+	margin:0px;
+	cursor: default;
+}
+
+
+
+
 
 //
 // HOME
@@ -61,6 +85,9 @@ footer {
 	padding-top:15px;
 	border-right: 1px solid rgba(255,255,255,.25);
 	.clearfix();
+	p {
+		margin: 0px 0px 20px 0px;
+	}
 }
 
 .category2 {
@@ -70,6 +97,9 @@ footer {
 	padding-bottom:10px;
 	padding-top:15px;
 	.clearfix();
+	p {
+		margin: 0px 0px 20px 0px;
+	}
 
 }
 
@@ -82,6 +112,7 @@ footer {
 	.clearfix();
 	border-right: 1px solid rgba(255,255,255,.25);
 	border-top: 1px solid rgba(255,255,255,.25);
+
 }
 
 .category4 {
@@ -98,11 +129,36 @@ footer {
 .category2,
 .category3,
 .category4 {
-	img {
-		max-width: 100%;
-		margin-bottom: 10px;
-	}	
+	a {
+	  color: @white;
+	  text-decoration: none;
+	       -o-transition:.5s;
+	      -ms-transition:.5s;
+	     -moz-transition:.5s;
+	  -webkit-transition:.5s;
+	          transition:.5s;
+	  &:hover,
+	  &:focus {
+	    color: @black;
+	    text-decoration: none;
+	  }
+	  span[class^="icon-"] {
+	  	font-size: 80px;
+	  	margin-bottom: 10px;
+	  	display: block;
+	  }
+	}
+
 }
+
+.category3,
+.category4 {
+	span[class^="icon-"] {
+		margin-top: 20px;
+	}
+}
+
+
 
 
 //
@@ -143,7 +199,16 @@ footer {
 				color: @red;
 				position: relative;
 			}
+
+			&:nth-child(2) {
+				padding: 0px 10px 0px 5px;
+			}
+
+			&:nth-child(3) {
+				padding: 0px 5px 0px 10px;
+			}
 		}
+
 
 		img {
 			max-width: 50px;
@@ -170,7 +235,15 @@ footer {
 	height:50px;
 	background-color: @red;
 	text-align: center;
+	padding: 10px;
 }
 
+
+.product {
+	span[class^="icon-"] {
+		font-size: 16px;
+		vertical-align: inherit;
+	}
+}
 
 
